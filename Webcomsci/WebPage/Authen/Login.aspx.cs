@@ -43,9 +43,7 @@ namespace Webcomsci.WebPage.Authen
 
 
             try
-            {
-
-
+            { 
 
                 if ((username.Substring(0, 2) + username.Substring(5, 4).ToString()).Equals("020461"))
                 {

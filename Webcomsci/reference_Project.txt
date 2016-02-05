@@ -3,8 +3,7 @@
 
 
  /*refresh web page*/
-  <meta http-equiv="refresh" content="5;url=../../FrontYard/Home.aspx"/>
-
+  <meta http-equiv="refresh" content="5;url=../../FrontYard/Home.aspx"/> 
 
   /*timer in C# */
   DateTime viewTime;

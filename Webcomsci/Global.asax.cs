@@ -16,13 +16,10 @@ namespace Webcomsci
         }
 
         protected void Session_Start(object sender, EventArgs e)
-        {
-
+        { 
             //Code that runs when a new session is started
             //try
-            //{
-
-           
+            //{  
                 //if (Request.Url.LocalPath.ToString() != "../../WebPage/Authen/Login.aspx" & Session["userid"] == null || Request.Url.LocalPath.ToString() != "../../WebPage/Authen/Login.aspx" & Session["userid"] == null)
                 //{
                 //    Response.Redirect("../../WebPage/Authen/Login.aspx");
@@ -30,8 +27,7 @@ namespace Webcomsci
             //}
             //catch (Exception)
             //{
-            //    Response.Redirect("../../WebPage/Authen/Login.aspx");
-               
+            //    Response.Redirect("../../WebPage/Authen/Login.aspx"); 
             //}
         }
 
