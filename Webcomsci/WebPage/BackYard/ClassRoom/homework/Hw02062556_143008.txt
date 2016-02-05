@@ -1,0 +1,13 @@
+SSRS
+http://www.c-sharpcorner.com/uploadfile/amit.dhania/ssrs-reporting-services-architectu-part-i/
+http://www.c-sharpcorner.com/uploadfile/amit.dhania/ssrs-reporting-services-and-architectu-part-ii/
+
+
+
+hidden file: 
+http://www.wikihow.com/Open-the-Hidden-Files-in-a-USB-Pen-Drive
+http://imacify.com/2011/02/how-to-recover-hidden-files-from-virus-infected-usb-pendrive/
+
+
+expression :   
+http://msdn.microsoft.com/en-us/library/ms157328(v=sql.90).aspx

@@ -1,0 +1,664 @@
+﻿/*======================
+ส่วน Detail_Alumni
+=======================*/
+
+.fontTitle_Detail_Alumni
+{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 0.1em 0.1em 0.05em #fff;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.Photo_Detail_Alumni
+{
+    border-style: groove;
+    border-width: 1px;
+    border-color: #999999;
+    width: 147px;
+    height: 181px;
+}
+
+.AreaContent_Detail_Alumni
+{
+    border: 2px solid #DBDBDB;
+    float: left;
+    width: 419px;
+    height: 259px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.fontcontent_Detail_Alumni_left
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #000000;
+    float: left;
+    text-shadow: 0.1em 0.1em 0.05em #fff;
+    width: 77px;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.fontcontent_Detail_Alumni_left2
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #000000;
+    float: left;
+    text-shadow: 0.1em 0.1em 0.05em #fff;
+    width: 228px;
+    text-align: right;
+    padding-top: 2px;
+}
+
+
+.fontcontent_Detail_Alumni_right
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #000000;
+    float: left;
+    text-shadow: 0.1em 0.1em 0.05em #fff;
+    padding-left: 5px;
+}
+
+.Content_Detail_Alumni_smal
+{
+    clear: both;
+    width: 400px;
+    height: 30px;
+}
+
+.Content_Detail_Alumni_Big
+{
+    clear: both;
+    width: 400px;
+    height: 90px;
+}
+
+/*=============================================*/
+
+
+/*
+================================================================
+                Tab
+================================================================*/
+
+/*Header*/
+.Tab1 .ajax__tab_header
+{
+    background-position: left bottom;
+    margin-left: 0px;
+    height: 26px;
+    padding-left: 30px;
+    background-image: url('../../image/Tab/BGTopTab.png');
+    background-repeat: no-repeat;
+}
+
+
+
+/*======================
+ส่วน SubmenuDetailteach
+=======================*/
+
+.Title_SubmenuDetailteach
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/TitleSubmenu.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 746px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.addStd_SubmenuDetailteach
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/AddStd.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 22px;
+    width: 179px;
+    height: 50px; 
+    padding-bottom: 22px;
+    width: 730px;
+    height: 50px;
+  
+}
+
+.addStd_SubmenuDetailteach:hover
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/AddStd2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 22px;
+    width: 730px;
+    height: 50px;
+}
+
+.addExcel_SubmenuDetailteach
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/AddExcell.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 22px;
+    width: 730px;
+    height: 50px;
+}
+
+.addExcel_SubmenuDetailteach:hover
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/AddExcell2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 22px;
+    width: 730px;
+    height: 50px;
+}
+
+.addEducation_SubmenuDetailteach
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/AddEducation.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 22px;
+    width: 730px;
+    height: 50px;
+}
+
+.addEducation_SubmenuDetailteach:hover
+{
+    background-image: url('../../image/Admin/SubmenuDetailteach/AddEducation2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 22px;
+    width: 730px;
+    height: 50px;
+}
+
+
+
+/*================================searchBranchNews.aspx=================================*/
+
+.Crop_AddData_searchBranchNews
+{
+    width: 198px;
+    height: 31px;  
+    margin-top: -3px;
+    float: right;  
+}
+
+.AddData_searchBranchNews
+{
+    width: 84px;
+    height: 31px;
+    background-image: url('../../image/Admin/AddData2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    float: right;
+}
+
+.AddData_searchBranchNews:hover
+{
+    width: 84px;
+    height: 31px;
+    background-image: url('../../image/Admin/AddData3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+}
+
+
+
+.MyGridView_searchBranchNews
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_searchBranchNews
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_searchBranchNews
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_searchBranchNews:hover, .MyGridViewAlt_searchBranchNews:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_searchBranchNews
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px; /* background-image: url('../../image/Back/Classroom/HeaderGridViewGreen.png');*/ /*background-image: url('../../image/Back/Classroom/HeaderGridViewBlue.png');*/
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+
+/*================================SearchTrainning.aspx================================*/
+
+.MyGridView_SearchTrainning
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_SearchTrainning
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_SearchTrainning
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_SearchTrainning:hover, .MyGridViewAlt_SearchTrainning:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_SearchTrainning
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+/*================================SearchWorkBranchNews.aspx================================*/
+
+
+.MyGridView_SearchWorkBranchNews
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_SearchWorkBranchNews
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_SearchWorkBranchNews
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_SearchWorkBranchNews:hover, .MyGridViewAlt_SearchWorkBranchNews:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_SearchWorkBranchNews
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+/*================================SearchStudentNews.aspx================================*/
+
+.MyGridView_SearchStudentNews
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_SearchStudentNews
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_SearchStudentNews
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_SearchStudentNews:hover, .MyGridViewAlt_SearchStudentNews:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_SearchStudentNews
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+/*================================SearchSubject.aspx================================*/
+
+.MyGridView_SearchSubject
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_SearchSubject
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_SearchSubject
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_SearchSubject:hover, .MyGridViewAlt_SearchSubject:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_SearchSubject
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+/*================================MainDetailTeach.aspx================================*/
+
+.MyGridView_MainDetailTeach
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_MainDetailTeach
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_MainDetailTeach
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_MainDetailTeach:hover, .MyGridViewAlt_MainDetailTeach:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_MainDetailTeach
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+/*================================updateDetailTeach.aspx================================*/
+.MyGridView_gvSubjectShow_updateDetailTeach
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridView_gvSubjectShowRow_updateDetailTeach
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridView_gvSubjectShowAlt_updateDetailTeach
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridView_gvSubjectShowRow_updateDetailTeach:hover, .MyGridView_gvSubjectShowAlt_updateDetailTeach:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_updateDetailTeach
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+
+/*================================ManageUserTeacher.aspx================================*/
+
+.MyGridView_ManageUserTeacher
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_ManageUserTeacher
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_ManageUserTeacher
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_ManageUserTeacher:hover, .MyGridViewAlt_ManageUserTeacher:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_ManageUserTeacher
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+/*================================ManageUseStudent.aspx================================*/
+
+.MyGridView_ManageUseStudent
+{
+    font-family: tahoma;
+    font-size: 13px;
+    color: #000000;
+}
+
+.MyGridViewRow_ManageUseStudent
+{
+    background-color: #ADB8D3;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewAlt_ManageUseStudent
+{
+    background-color: #D7D7D7;
+    height: 28px;
+    text-align: center;
+}
+
+.MyGridViewRow_ManageUseStudent:hover, .MyGridViewAlt_ManageUseStudent:hover
+{
+    background-color: #556A9D;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+
+.GridViewHeader_ManageUseStudent
+{
+    font-family: tahoma;
+    font-size: 14px;
+    height: 35px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    background-color: #333399;
+}
+
+
+
+.button_in_admin
+{
+    border: 1px solid #bfbfbf;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    background-color: #dedede;
+    background-image: url('../../image/Back/Bg_Button_in_back.png');
+    background-repeat: repeat-x;
+    text-shadow: 0.1em 0.1em #fff;
+    cursor: pointer;
+}
+
+
+.cropborder
+{    
+    box-shadow: 0 0 1px 1px #D4D4D4;
+}
+
+
+
+/***textbox and lable **/
+showDetailNews
+
+.textbox_in_back
+{
+    border: 1px solid #bfbfbf;
+    padding-left: 3px;
+}
+
+.button_in_back
+{
+    border: 1px solid #bfbfbf;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    background-color: #dedede;
+    background-image: url('../../image/Back/Bg_Button_in_back.png');
+    background-repeat: repeat-x;
+    text-shadow: 0.1em 0.1em #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

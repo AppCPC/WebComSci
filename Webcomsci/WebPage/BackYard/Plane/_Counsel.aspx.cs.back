@@ -1,0 +1,512 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Webcomsci.WebPage.BackYard.Plane
+{
+    public partial class _Counsel : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!Page.IsPostBack)
+            {
+                // showListboxAllsubject();
+
+                string userid = Session["userid"].ToString();
+                string yearedu = Session["yearEducate"].ToString();
+                //DataTable dt = BLL.PlanEducate.selectCheckCurriculumFromUser(userid, yearedu);
+                //dtAllSubject.DataSource = dt;
+                //dtAllSubject.DataBind();
+
+                //DataTable dtcheckFW = BLL.PlanEducate.selectCheckFW(userid, yearedu);
+                //if (dtcheckFW.Rows.Count > 0)
+                //{
+                //    int i = 0;
+                //    foreach (DataRow row in dtcheckFW.Rows)
+                //    {
+                //        foreach (DataColumn column in dtcheckFW.Columns)
+                //        {
+                //            Response.Write(row[column] + "  ");
+
+                //        }
+                //        Response.Write("<br/>");
+                //        i++;
+                //    }
+                //    Response.Write("count B " + i.ToString());
+                //}
+            }
+        }
+
+        private void searchShowGride()
+        {
+            //   DataTable dtcheckCurri = BLL.PlanEducate.selectCheckCurriculumFromUser(userid, yearedu);
+        }
+
+        private void refreshListbox()
+        {
+            DataTable dt = (DataTable)Session["subjectType"];
+
+            foreach (ListItem li in ListBoxAllSubject.Items)
+            {
+                // Response.Write(li.Value.ToString());
+                string valueListbox = li.Value.ToString();
+                foreach (DataRow row in dt.Rows)
+                {
+                    if ((row[0].ToString()).Equals(valueListbox))
+                    {
+                        if ((row[2].ToString()).Equals("F") || (row[2].ToString()).Equals("FN"))
+                        {
+                            li.Attributes.Add("class", "myListBox-red");
+                        }
+                        else if ((row[2].ToString()).Equals("N"))
+                        {
+                            li.Attributes.Add("class", "myListBox-green");
+                        }
+                        else if ((row[2].ToString()).Equals("W") || (row[2].ToString()).Equals("WN"))
+                        {
+                            li.Attributes.Add("class", "myListBox-orange");
+                        }
+                    }
+                }
+            }
+        }
+
+        private void showListboxAllsubject()
+        {
+            string userid = Session["userid"].ToString();
+            string yearedu = Session["yearEducate"].ToString();
+
+            //DataTable dt = BLL.PlanEducate.selectShowListboxAllsubject(userid, yearedu);
+            DataTable dt = BLL.PlanEducate.selectShowListboxSubject(userid, yearedu);
+
+            //if (dt.Rows.Count > 0)
+            //{
+            //    int i = 0;
+            //    foreach (DataRow row in dt.Rows)
+            //    {
+            //        foreach (DataColumn column in dt.Columns)
+            //        {
+            //            Response.Write(row[column] + "  ");
+
+            //        }
+            //        Response.Write("<br/>");
+            //        i++;
+            //    }
+            //    Response.Write("count B " + i.ToString());
+            //}
+
+            Session["subjectType"] = dt;
+
+            foreach (DataRow rr in dt.Rows)
+            {
+                ListItem liGreen = new ListItem(rr[1].ToString(), rr[0].ToString()); //Create a Green item
+
+                ListBoxAllSubject.Items.AddRange(new ListItem[] { liGreen });
+            }
+
+            refreshListbox();
+        }
+
+        private void AddRemoveItem(ListBox aSource, ListBox aTarget)
+        {
+            ListItemCollection licCollection;
+
+            try
+            {
+                licCollection = new ListItemCollection();
+                for (int intCount = 0; intCount < aSource.Items.Count; intCount++)
+                {
+                    if (aSource.Items[intCount].Selected == true)
+                    {
+                        aSource.Items[intCount].Selected = false; // clear value is not selected
+
+                        licCollection.Add(aSource.Items[intCount]);
+                    }
+                }
+
+                for (int intCount = 0; intCount < licCollection.Count; intCount++)
+                {
+                    aSource.Items[intCount].Selected = false;// clear value is not selected
+
+                    aSource.Items.Remove(licCollection[intCount]);
+                    aTarget.Items.Add(licCollection[intCount]);
+                }
+            }
+            catch (Exception expException)
+            {
+                Response.Write(expException.Message);
+            }
+            finally
+            {
+                licCollection = null;
+            }
+        }
+
+        public void ShowMessageWeb(string msg)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("alert('");
+            sb.Append(msg.Replace("\n", "\\n").Replace("\r", "").Replace("'", "\\'"));
+            sb.Append("');");
+            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "showalert", sb.ToString(), true);
+        }
+
+        private int countcheck = 0;
+
+        private void setCheckF(string code)
+        {
+            string userid = Session["userid"].ToString();
+            string yearedu = Session["yearEducate"].ToString();
+            DataTable dt = BLL.PlanEducate.selectShowListboxAllsubject(userid, yearedu);
+
+            foreach (DataRow rowsub in dt.Rows)
+            {
+                if ((rowsub[0].ToString()).Equals(code))
+                {
+                    if ((rowsub[2].ToString()).Equals("FN"))
+                    {
+                        countcheck++;
+                    }
+                }
+            }
+        }
+
+        private int checkSubjectW(string code)
+        {
+            int count = 0;
+
+            string userid = Session["userid"].ToString();
+            string yearedu = Session["yearEducate"].ToString();
+            DataTable dt = BLL.PlanEducate.selectShowListboxAllsubject(userid, yearedu);
+
+            foreach (DataRow rowsub in dt.Rows)
+            {
+                if ((rowsub[0].ToString()).Equals(code))
+                {
+                    if ((rowsub[2].ToString()).Equals("WN"))
+                    {
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
+
+        protected void imgBtnrLeft_Click(object sender, ImageClickEventArgs e)
+        {
+            ListBoxAllSubject.ClearSelection();
+            AddRemoveItem(ListBoxRegistSubject, ListBoxAllSubject);
+
+            if (Convert.ToInt32(lblcredite.Text) > 0)
+            {
+                int creditsub = BLL.PlanEducate.selectCrediteSubject(ListBoxAllSubject.SelectedValue);
+                lblcredite.Text = (Convert.ToInt32(lblcredite.Text) - Convert.ToInt32(creditsub)).ToString();
+            }
+
+            refreshListbox();
+        }
+
+        protected void imgBtnrRight_Click(object sender, ImageClickEventArgs e)
+        {
+            setCheckF(ListBoxAllSubject.SelectedValue);
+
+            int year = Convert.ToInt32(Session["yearEducate"].ToString());
+
+            if (countcheck > 0 && year <= 2552)
+            {
+                tooltipAlert.Visible = true;
+                tooltip_alert.Visible = true;
+                tooltip_counsel_box.Visible = false;
+                // lblmessageArert.Text = " รายวิชานี้ติด F ไม่สามารถเลือกลงทะเบียนได้จ้า ";
+                lblmessageArert.Text = " รายวิชาที่คุณเลือกเป็นตัวต่อรายวิชาที่ติด F ไม่สามารถลงทะเบียนได้ ! ";
+            }
+            else if (checkSubjectW(ListBoxAllSubject.SelectedValue) > 0)
+            {
+                /*** เช็ครายวิชาที่ถอน***/
+                tooltipAlert.Visible = true;
+                tooltip_alert.Visible = true;
+                tooltip_counsel_box.Visible = false;
+                lblmessageArert.Text = " รายวิชาที่คุณเลือกเป็นตัวต่อรายวิชาที่ถอน ไม่สามารถลงทะเบียนได้ ! ";
+            }
+            else
+            {
+                tooltipAlert.Visible = false;
+
+                int creditsub = BLL.PlanEducate.selectCrediteSubject(ListBoxAllSubject.SelectedValue);
+
+                //int term = Convert.ToInt32(ddlyearEdu.SelectedValue.ToString());
+                int term = BLL.PlanEducate.selectTerm();
+                if (term == 1 || term == 2)
+                {
+                    if ((Convert.ToInt32(lblcredite.Text) + creditsub) <= 22)
+                    {
+                        ListBoxRegistSubject.ClearSelection();
+                        AddRemoveItem(ListBoxAllSubject, ListBoxRegistSubject);
+                        lblcredite.Text = (Convert.ToInt32(lblcredite.Text) + Convert.ToInt32(creditsub)).ToString();
+                    }
+                    else
+                    {
+                        lblmessageArert.Text = " ระบบให้คำปรึกษาไม่อนุญาติให้ลงทะเบียนเกิน 21 หน่วยกิต ! ";
+                    }
+                }
+                else
+                {
+                    if ((Convert.ToInt32(lblcredite.Text) + creditsub) <= 9)
+                    {
+                        ListBoxRegistSubject.ClearSelection();
+                        AddRemoveItem(ListBoxAllSubject, ListBoxRegistSubject);
+                        lblcredite.Text = (Convert.ToInt32(lblcredite.Text) + Convert.ToInt32(creditsub)).ToString();
+                    }
+                    else
+                    {
+                        lblmessageArert.Text = " ระบบให้คำปรึกษาไม่อนุญาติให้ลงทะเบียนเกิน 9 หน่วยกิต ในภาคการศึกษาที่ 3 ! ";
+                    }
+                }
+            }
+
+            refreshListbox();
+        }
+
+        protected void ListBoxAllSubject_Load(object sender, EventArgs e)
+        {
+            string userid = Session["userid"].ToString();
+            string yearedu = Session["yearEducate"].ToString();
+
+            DataTable dt = BLL.PlanEducate.selectShowListboxAllsubject(userid, yearedu);
+            foreach (DataRow data in dt.Rows)
+            {
+                ListItem item = new ListItem();
+
+                if ((data[2].ToString()).Equals("F") || (data[2].ToString()).Equals("FN"))
+                {
+                    item.Attributes.Add("class", "myListBox-red");
+                }
+                else if ((data[2].ToString()).Equals("W") || (data[2].ToString()).Equals("WN"))
+                {
+                    item.Attributes.Add("class", "myListBox-orange");
+                }
+                else
+                {
+                    item.Attributes.Add("class", "myListBox-green");
+                }
+
+                ListBoxAllSubject.Items.Add(item);
+            }
+        }
+
+        protected void ddlyearEdu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ListBoxRegistSubject.DataSource = "";
+            ListBoxRegistSubject.DataBind();
+
+            ListBoxAllSubject.DataSource = "";
+            ListBoxAllSubject.DataBind();
+
+            showListboxAllsubject();
+            tooltipAlert.Visible = false;
+            refreshListbox();
+        }
+
+        protected void imgbtnClostAlert_Click(object sender, ImageClickEventArgs e)
+        {
+            tooltipAlert.Visible = false;
+            refreshListbox();
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            tooltipShowDetailSub.Visible = false;
+            refreshListbox();
+        }
+
+        protected void ListBoxAllSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tooltip_counsel_box.Visible = true;
+            tooltipShowDetailSub.Visible = true;
+            tooltip_alert.Visible = false;
+
+            //DataTable dt = (DataTable)Session["subjectType"];
+
+            string userid = Session["userid"].ToString();
+            string yearedu = Session["yearEducate"].ToString();
+            DataTable dt = (DataTable)Session["subjectType"];//BLL.PlanEducate.selectShowListboxAllsubject(userid, yearedu);
+            lblstatus.Text = " ประเภทรายวิชาปกติ ";
+
+            if (dt.Rows.Count > 0)
+            {
+                foreach (DataRow rowsub in dt.Rows)
+                {
+                    if ((rowsub[0].ToString()).Equals(ListBoxAllSubject.SelectedValue))
+                    {
+                        if ((rowsub[2].ToString()).Equals("F") || (rowsub[2].ToString()).Equals("FN"))
+                        {
+                            if ((rowsub[2].ToString()).Equals("F"))
+                            {
+                                lblstatus.Text = "รายวิชาติด F ";
+                            }
+                            else
+                            {
+                                lblstatus.Text = "รายวิชาตัวต่อวิชาติด F";
+                            }
+
+                            lblsubjectCode.Text = rowsub[0].ToString();
+                            lblNameSubject.Text = rowsub[1].ToString();
+                            tooltipShowDetailSub.Attributes.Add("class", "tooltip_counsel_box_red");
+                            arrow_counse.Attributes.Add("class", "tooltip-arrow_counse_red");
+                        }
+                        else if ((rowsub[2].ToString()).Equals("W") || (rowsub[2].ToString()).Equals("WN"))
+                        {
+                            if ((rowsub[2].ToString()).Equals("W"))
+                            {
+                                lblstatus.Text = "รายวิชาที่ถอน ";
+                            }
+                            else
+                            {
+                                lblstatus.Text = "รายวิชาตัวต่อวิชาที่ถอน ! ";
+                            }
+
+                            lblsubjectCode.Text = rowsub[0].ToString();
+                            lblNameSubject.Text = rowsub[1].ToString();
+                            tooltipShowDetailSub.Attributes.Add("class", "tooltip_counsel_box_orange");
+                            arrow_counse.Attributes.Add("class", "tooltip-arrow_counse_orange");
+                        }
+                        else
+                        {
+                            lblstatus.Text = " ประเภทรายวิชาปกติ ";
+                            lblsubjectCode.Text = rowsub[0].ToString();
+                            lblNameSubject.Text = rowsub[1].ToString();
+                            tooltipShowDetailSub.Attributes.Add("class", "tooltip_counsel_box_green");
+                            arrow_counse.Attributes.Add("class", "tooltip-arrow_counse_green");
+                        }
+                    }
+                }
+            }
+
+            refreshListbox();
+        }
+
+        protected void btnAddd_Click(object sender, EventArgs e)
+        {
+            //for (int i = 0; i < ListBoxRegistSubject.Items.Count; i++)
+            // {
+            //     string codeStdRegis = ListBoxRegistSubject.Items[i].Value;
+            //   string userid= Session["userid"].ToString();
+            //   string year = Session["yearEducate"].ToString();
+
+            //    DateTime dt = DateTime.Now;
+            //    string level = ((dt.Year + 543) - Convert.ToInt32(year)).ToString() ;
+            //    BLL.PlanEducate.insertEnrolStd(codeStdRegis,userid,level);
+            //    Response.Write(ListBoxRegistSubject.Items[i].Value+"<br />"); ;
+
+            // }
+
+            Response.Redirect("~/WebPage/BackYard/ClassRoom/mainClassroom.aspx");
+        }
+
+        protected void ListBoxRegistSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string value = ListBoxRegistSubject.SelectedValue;
+            DataTable dtselect = BLL.DetailTeach.selectShowstdChoose(value);
+
+            ddlGroup.Items.Clear();
+
+            foreach (DataRow item in dtselect.Rows)
+            {
+                ddlGroup.Items.Add(new ListItem("กลุ่มที่ " + item[1].ToString(), item[0].ToString()));
+            }
+
+            lblcode.Text = ListBoxRegistSubject.SelectedValue;
+            lblNameThai.Text = ListBoxRegistSubject.SelectedValue;
+
+            Session["choosesub"] = value;
+        }
+
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string vachose = Session["choosesub"].ToString();
+
+                DataTable dt = new DataTable();
+                dt.Columns.Add("subCode");
+                dt.Columns.Add("subthai");
+                foreach (ListItem li in ListBoxRegistSubject.Items)
+                {
+                    string subthai = li.Text;
+                    string code = li.Value;
+
+                    if (!code.Equals(vachose))
+                    {
+                        dt.Rows.Add(code, subthai);
+                    }
+                }
+
+                ListBoxRegistSubject.Items.Clear();
+
+                foreach (DataRow item in dt.Rows)
+                {
+                    ListBoxRegistSubject.Items.Add(new ListItem(item[1].ToString(), item[0].ToString()));
+                }
+
+                string detailTeach = ddlGroup.SelectedValue;
+                string userid = Session["userid"].ToString();
+                bool insertEnrool = BLL.DetailTeach.insertEnroll(userid, detailTeach);
+                gvShowDetail.DataBind();
+            }
+            catch (Exception)
+            {
+                // ShowMessageWeb("เลือกวิชาก่อนสิคับ");
+                gvShowDetail.DataBind();
+            }
+            gvShowDetail.DataBind();
+
+            showListboxAllsubject();
+        }
+
+        protected void ddlGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbldetail.Text = BLL.DetailTeach.selectDetailConsoul(ddlGroup.SelectedValue);
+        }
+
+        protected void lbtndeleteDch1_Click(object sender, EventArgs e)
+        {
+            LinkButton objImage = (LinkButton)sender;
+
+            string[] commandArgs = objImage.CommandArgument.ToString().Split(new char[] { ',' });
+
+            string subcode = commandArgs[0];
+            string tchID = commandArgs[1];
+            string dchid = commandArgs[2];
+            string userid = Session["userid"].ToString();
+
+            // bool deleteDch = BLL.DetailTeach.deleteDetailTeach(subcode, tchID);
+            bool deleteEnroll = BLL.DetailTeach.deleteEnroll(dchid, userid);
+
+            //showListboxAllsubject();
+            //gvShowDetail.DataBind();
+            clearValue();
+        }
+
+        private void clearValue()
+        {
+            lblcode.Text = "";
+            lblNameThai.Text = "";
+            ddlGroup.Items.Clear();
+            lbldetail.Text = "";
+            showListboxAllsubject();
+            gvShowDetail.DataBind();
+        }
+
+        protected void dtAllSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+    }
+}

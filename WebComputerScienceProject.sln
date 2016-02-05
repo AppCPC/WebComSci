@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{46392C9D-C2FC-4B4F-8C49-091C49A7DB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebcomsciProject", "Webcomsci\WebcomsciProject.csproj", "{D27B1E92-66E1-40B9-A3CB-08744795F9B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{256BD77F-911B-475E-BCAE-590F1FEE18E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0D3A6D27-86B4-4706-8ADA-D8D8946BA568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{C9C1877D-9406-4991-BEBB-C734FC29869F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{CD13D69F-65CC-4F03-AC0C-02380F252FEF}"
+	ProjectSection(SolutionItems) = preProject
+		AjaxControlToolkit.dll = AjaxControlToolkit.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "CommonClass\common.csproj", "{FD9A3044-861D-4749-8D25-8534D61488AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D27B1E92-66E1-40B9-A3CB-08744795F9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27B1E92-66E1-40B9-A3CB-08744795F9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27B1E92-66E1-40B9-A3CB-08744795F9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27B1E92-66E1-40B9-A3CB-08744795F9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256BD77F-911B-475E-BCAE-590F1FEE18E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256BD77F-911B-475E-BCAE-590F1FEE18E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256BD77F-911B-475E-BCAE-590F1FEE18E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256BD77F-911B-475E-BCAE-590F1FEE18E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C1877D-9406-4991-BEBB-C734FC29869F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C1877D-9406-4991-BEBB-C734FC29869F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C1877D-9406-4991-BEBB-C734FC29869F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C1877D-9406-4991-BEBB-C734FC29869F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9A3044-861D-4749-8D25-8534D61488AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9A3044-861D-4749-8D25-8534D61488AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9A3044-861D-4749-8D25-8534D61488AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9A3044-861D-4749-8D25-8534D61488AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{256BD77F-911B-475E-BCAE-590F1FEE18E5} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
+		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
+		{C9C1877D-9406-4991-BEBB-C734FC29869F} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
+		{FD9A3044-861D-4749-8D25-8534D61488AB} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

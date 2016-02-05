@@ -1,0 +1,22 @@
+﻿
+/* เอาเวลาจากเครื่องมาเก็บในฐานข้อมูล */
+SELECT { fn NOW() }
+select GetDate()
+http://www.sql-server-helper.com/tips/date-formats.aspx
+
+
+/*Addvalue ExecuteNonQuery*/
+    cmd.Parameters.Add("@Name", SqlDbType.VarChar, 20).Value = "Bob";
+    objCmd.Parameters.Add("@title", SqlDbType.NVarChar).Value = branch.BranchNews_Name.ToString();
+
+
+/* เปลี่ยนข้อมูล stringvalue ==> datetime sqlDB */
+http://www.sqlusa.com/bestpractices/datetimeconversion/
+
+
+/*select sub query*/
+SELECT * FROM [VW_INVOICE] WHERE Inv_ID in(select max(Inv_ID) FROM [VW_INVOICE] where Rent_ID = @rentID
+
+
+/*formate strint datetime*/
+http://www.csharp-examples.net/string-format-datetime/

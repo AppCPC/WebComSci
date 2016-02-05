@@ -1,0 +1,1099 @@
+
+
+.head
+{
+    width: 962px;
+    background-repeat: no-repeat;
+    height: 177px;
+    background-image: url('../../image/HeadFront.gif');
+}
+
+
+
+
+.blue .accordion
+{
+    border-top: 1px solid #013d6c;
+    border-right: 1px solid #013d6c;
+    border-left: 1px solid #013d6c;
+}
+.blue .accordion, .blue .accordion li
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.blue .accordion a
+{
+    padding: 10px 10px 10px 15px;
+    background: #0079ba;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    border-bottom: 1px solid #013d6c;
+    border-top: 1px solid #4695d3;
+}
+.blue .accordion ul a
+{
+    padding: 10px 10px 10px 25px;
+    font-size: small;
+    width: 138px;
+}
+.blue .accordion a.dcjq-parent, .blue .accordion a.dcjq-parent:hover
+{
+    padding: 10px 10px 10px 15px;
+}
+.blue .accordion a.dcjq-parent.active
+{
+    background-color: #05222c;
+    color: #ffffff;
+    font-weight: bold;
+}
+.blue .accordion a:hover
+{
+    background: #05222c;
+}
+.blue .accordion a:active
+{
+}
+
+
+
+
+
+
+/*
+================================================================
+                Tab
+================================================================*/
+
+/*Header*/
+.Tab1 .ajax__tab_header
+{
+    background-position: left bottom;
+    margin-left: 0px;
+    height: 26px;
+    padding-left: 30px;
+    background-image: url('../../image/Tab/BGTopTab.png');
+    background-repeat: no-repeat;
+}
+/*Body*/
+.Tab1 .ajax__tab_body
+{
+    border-width: 1px;
+    border-color: #b4cbdf;
+    background-repeat: repeat;
+    background-image: url('../../image/bodyMenu2.png');
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    padding-left: 10px;
+}
+/*Tab Active*/
+.Tab1 .ajax__tab_active .ajax__tab_tab
+{
+    color: #ffffff;
+    background: url('../../image/Tab/Active1.png') no-repeat;
+    height: 32px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 3px;
+}
+.Tab1 .ajax__tab_active .ajax__tab_inner
+{
+    background: url('../../image/Tab/Active1L.png') no-repeat left top;
+    padding-left: 10px;
+}
+.Tab1 .ajax__tab_active .ajax__tab_outer
+{
+    background: url('../../image/Tab/Active1R.png') no-repeat right top;
+    padding-right: 6px;
+}
+
+/*Tab Inactive*/
+.Tab1 .ajax__tab_tab
+{
+    color: #ffffff;
+    background: url('../../image/Tab/InActive.png') no-repeat;
+    height: 32px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.Tab1 .ajax__tab_inner
+{
+    color: #ffffff;
+    background: url('../../image/Tab/InActiveL.png') no-repeat left top;
+    padding-left: 10px;
+}
+.Tab1 .ajax__tab_outer
+{
+    color: #ffffff;
+    background: url('../../image/Tab/InActiveR.png') no-repeat right top;
+    padding-right: 6px;
+}
+
+
+
+
+
+/*Header*/
+.Tab2 .ajax__tab_header
+{
+    background-position: left bottom;
+    margin-left: 0px;
+    height: 26px;
+    padding-left: 30px;
+    background-image: url('../../image/Tab/BGTopTab.png');
+    background-repeat: no-repeat;
+}
+/*Body*/
+.Tab2 .ajax__tab_body
+{
+    border-width: 1px;
+    border-color: #b4cbdf;
+    padding-top: 0px;
+    background-repeat: repeat;
+    background-image: url('../../image/bodyMenu2.png');
+    margin-top: 0px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    padding-left: 10px;
+}
+/*Tab Active*/
+.Tab2 .ajax__tab_active .ajax__tab_tab
+{
+    color: #ffffff;
+    background: url('../../image/Tab/Active2.png') no-repeat;
+    height: 32px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.Tab2 .ajax__tab_active .ajax__tab_inner
+{
+    background: url('../../image/Tab/Active2L.png') no-repeat left top;
+    padding-left: 10px;
+}
+.Tab2 .ajax__tab_active .ajax__tab_outer
+{
+    background: url('../../image/Tab/Active2R.png') no-repeat right top;
+    padding-right: 6px;
+}
+
+/*Tab Inactive*/
+.Tab2 .ajax__tab_tab
+{
+    color: #ffffff;
+    background: url('../../image/Tab/InActive.png') no-repeat;
+    height: 32px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.Tab2 .ajax__tab_inner
+{
+    background: url('../../image/Tab/InActiveL.png') no-repeat left top;
+    padding-left: 10px;
+}
+.Tab2 .ajax__tab_outer
+{
+    background: url('../../image/Tab/InActiveR.png') no-repeat right top;
+    padding-right: 6px;
+}
+
+
+
+
+
+/*Header*/
+.Tab3 .ajax__tab_header
+{
+    background-position: left bottom;
+    margin-left: 0px;
+    height: 26px;
+    padding-left: 30px;
+    background-image: url('../../image/Tab/BGTopTab.png');
+    background-repeat: no-repeat;
+}
+/*Body*/
+.Tab3 .ajax__tab_body
+{
+    border-width: 1px;
+    border-color: #b4cbdf;
+    padding-top: 0px;
+    background-repeat: repeat;
+    background-image: url('../../image/bodyMenu2.png');
+    margin-top: 0px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    padding-left: 10px;
+}
+/*Tab Active*/
+.Tab3 .ajax__tab_active .ajax__tab_tab
+{
+    color: #ffffff;
+    background: url('../../image/Tab/Active3.png') no-repeat;
+    height: 32px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.Tab3 .ajax__tab_active .ajax__tab_inner
+{
+    background: url('../../image/Tab/Active3L.png') no-repeat left top;
+    padding-left: 10px;
+}
+.Tab3 .ajax__tab_active .ajax__tab_outer
+{
+    background: url('../../image/Tab/Active3R.png') no-repeat right top;
+    padding-right: 6px;
+}
+
+/*Tab Inactive*/
+.Tab3 .ajax__tab_tab
+{
+    color: #ffffff;
+    background: url('../../image/Tab/InActive.png') no-repeat;
+    height: 32px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.Tab3 .ajax__tab_inner
+{
+    background: url('../../image/Tab/InActiveL.png') no-repeat left top;
+    padding-left: 10px;
+}
+.Tab3 .ajax__tab_outer
+{
+    background: url('../../image/Tab/InActiveR.png') no-repeat right top;
+    padding-right: 6px;
+}
+
+
+
+.fontYellow
+{
+    color: #FFD02F;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+p
+{
+    margin: 0px;
+}
+
+.fontHead
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.fontWhite
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.fontWhite2
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+
+.Footer
+{
+    padding: 3px 10px 5px 10px;
+    font-family: tahoma;
+    font-size: small;
+    color: #000000;
+    width: 935px;
+    text-align: right;
+}
+
+
+
+
+.fontred
+{
+    font-family: Tahoma;
+    font-size: small;
+    color: #FF0000;
+    width: 496px;
+}
+
+
+.fontblue
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #90F2FF;
+}
+
+.fontblue2
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #0000FF;
+}
+
+.fontorange
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #FF4D00;
+    width: 74px;
+}
+
+.fontblack
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #000000;
+    width: 496px;
+}
+
+.show_all
+{
+    text-align: right;
+    margin-top: 7px;
+    margin-right: 3px;
+    font-family: tahoma;
+    font-size: small;
+}
+
+
+
+.content_all
+{
+    padding-left: 15px;
+    width: 600px;
+    height: 80px;
+    margin-top: 10px;
+    padding-top: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #F0F0F0;
+    margin-right: 5px;
+}
+
+.content_all2
+{
+    padding-left: 15px;
+    width: 595px;
+    height: 35px;
+    margin-top: 10px;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+    padding-top: 5px;
+}
+
+
+
+.pic1
+{
+    width: 70px;
+    height: 50px;
+    float: left;
+}
+
+.pic2
+{
+    width: 48px;
+    height: 48px;
+}
+
+.text_content
+{
+    padding-left: 5px;
+    width: 500px;
+    height: 50px;
+    float: left;
+}
+
+
+.text_content2
+{
+    padding-left: 5px;
+    width: 500px;
+    height: 50px;
+    float: left;
+    margin-top: -3px;
+}
+
+.p0
+{
+    width: 83px;
+    height: 50px;
+    float: left;
+}
+
+.p1
+{
+    width: 24px;
+    height: 19px;
+    float: left;
+}
+
+.p2
+{
+    width: 49px;
+    height: 14px;
+    float: left;
+}
+
+a:link, a:visited
+{
+    color: #5B5B5B;
+    text-decoration: none;
+    font-size: small;
+}
+
+a:hover
+{
+    color: #333333;
+    text-decoration: underline;
+    font-size: small;
+}
+
+
+.tebcontent
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    padding-bottom: 200px;
+    width: 656px;
+}
+
+.Title
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+
+
+.fontHead2
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFD02F;
+    padding-bottom: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+/*============= 斯橐 Alumni =======================*/
+
+.Title_Alumni
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+.All_img_Bundit
+{
+    float: left;
+    padding-left: 20px;
+    width: 623px;
+}
+
+.Bundit
+{
+    width: 160px;
+    height: 190px;
+    padding-left: 18px;
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+
+.img_Bundit
+{
+    width: 140px;
+    height: 177px;
+ 
+}
+
+.name1
+{
+    width: 180px;
+    height: 20px;
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #3333FF;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+.name2
+{
+    width: 180px;
+    height: 20px;
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #3333FF;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.krob
+{
+    background-image: url('../../image/Detail/B3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 240px;
+    float: left;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+
+
+.krobframe
+{
+    background-image: url('../../image/Detail/frame.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 240px;
+    float: left;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.krobframeOrange
+{
+    background-image: url('../../image/Alumni/frame.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 168px;
+    height: 240px;
+    float: left;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.fontname_Alumni
+{
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+.fontname_Alumni2
+{
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FF0066;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+.fonteducation_Alumni
+{
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FF9900;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+.tebcontent_Alumni
+{
+    padding-left: 30px;
+    float: left;
+    padding-bottom: 50px;
+}
+
+
+/*==================================================================*/
+
+
+.teacher1
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 240px;
+    padding-bottom: 25px;
+}
+
+.teacher2
+{
+    background-image: url('../../image/teacher/012.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 240px;
+    padding-bottom: 25px;
+}
+
+.teacher3
+{
+    background-image: url('../../image/teacher/013.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 240px;
+    padding-bottom: 25px;
+}
+
+
+.set_table
+{
+    width: 690px;
+}
+
+
+
+
+.tab_color_Gray
+{
+    text-align: right;
+    margin-top: 0px;
+    margin-right: 3px;
+    background-color: #BCC7D8;
+    width: 630px;
+    margin-left: -12px;
+    height: 7px;
+}
+
+
+
+.set_Datalist
+{
+    margin-left: 0px;
+    width: 630px;
+}
+
+
+/*============= 斯橐 Curriculum =======================*/
+.fontnumber
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    float: left;
+    width: 82%;
+    padding-top: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+.fontnumber2
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-right: 30px;
+    float: right;
+    padding-top: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+.fontnumber3
+{
+    float: left;
+    clear: both;
+    padding-top: 10px;
+    padding-left: 40px;
+    color: #fff;
+    width: 77%;
+    font-family: tahoma;
+    font-size: 14px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+.fontnumber4
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    clear: right;
+    color: #FFFFFF;
+    padding-right: 30px;
+    float: right;
+    padding-top: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.fontsubnumber
+{
+}
+
+.content_Curriculum
+{
+    width: 98%;
+    clear: both;
+}
+
+
+.Title_Curriculum
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+    width: 641px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+/*============= 斯橐 showDetailNews =======================*/
+
+.fontHeadWrite_showDetailNews
+{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+.fonttime_showDetailNews
+{
+    font-family: tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FF0000;
+    padding-bottom: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-left: 10px;
+}
+
+.fontWhite_showDetailNews
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+  
+}
+
+.fontHead_showDetailNews
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+/*============= 斯橐 showAllBranchNews =======================*/
+
+.Fonttitle_showAllBranchNews
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+/*============= 斯橐 showAllTrainningNews =======================*/
+
+.Fonttitle_showAllTrainningNews
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+/*============= 斯橐 Recommended_stores =======================*/
+.fontWhite_Recommended_stores
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+/*============= 斯橐 showAllWorkBranchNews =======================*/
+
+.fontWhite_showAllWorkBranchNews
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+/*============= 斯橐 Study =======================*/
+
+.fontTitleOrange_Study
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.fontWhite_Study
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+/*============= 斯橐 Career_in_works =======================*/
+
+.fontTitle_Career_in_works
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FF6600;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.fontWhite_Career_in_works
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    width: 375px;
+    padding-top: 10px;
+}
+
+
+.fontWhite_Career_in_works2
+{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-top: 10px;
+}
+
+
+/*============= 斯橐 showAllStudentNews =======================*/
+.Fonttitle_showAllStudentNews
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+/*============= 斯橐 Quality_assurance =======================*/
+
+.fontTitleOrange_Quality_assurance
+{
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF9900;
+    padding-bottom: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.fontcontentWrite_Quality_assurance
+{
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+   
+}
+
+.fontcontentOrange_Quality_assurance
+{
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 10px;
+    width: 601px;
+}
+
+
+.fontHeadOrange_Quality_assurance
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+
+
+
+/*============= 斯橐 Quality_assurance_documents =======================*/
+
+.fontHeadOrange_Quality_assurance_documents
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFD02F;
+    padding-bottom: 10px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+.fontcontent_Quality_assurance_documents
+{
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-left: 15px;
+}
+
+/*============= 斯橐 Recommended_stores =======================*/
+.imageTitle_Recommended_stores
+{
+    width: 686px;
+    height: 35px;
+    background-image: url('../../image/Detail/Titleimage_Recommended_stores.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 1px;
+    padding-left: 20px;
+}
+
+.fonthead_Recommended_stores
+{
+    font-family: tahoma;
+    font-size: large;
+    font-weight: bold;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+
+}
+.fontTitle_Recommended_stores
+{
+    font-family: tahoma;
+    font-size: medium;
+    font-weight: bold;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+/*============= 斯橐 Personnel =======================*/
+
+
+.Area_Personnel
+{
+    background-position: center;
+    width: 450px;
+    height: 245px;
+    text-align: center;
+    margin-top: 25px;
+    padding-left: 200px;
+}
+
+.Area_Personnels
+{
+    width: 627px;
+    height: 245px;
+    margin-top: 25px;
+}
+
+.Area_Blank
+{
+    float: left;
+    width: 123px;
+    height: 243px;
+}
+
+.Areahilight_Personnel
+{
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #63A3B8;
+    border-radius: 10px;
+}
+
+
+.fontnameOrange_Personnel
+{
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-top: 3px;
+}
+
+.fontPositionblue_Personnel
+{
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFD02F;
+    padding-bottom: 3px;
+    text-shadow: 0.1em 0.1em 0.05em #111;
+    padding-top: 3px;
+    width: 251px;
+}
+
+.fontTitle_Personnel
+{
+    font-family: tahoma;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD02F;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-bottom: 46px;
+}

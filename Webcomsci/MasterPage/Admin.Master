@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Webcomsci.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title></title>
+  <%--   <link href="../css/skins/Tabmenu_admin.css" rel="stylesheet" type="text/css" />--%>
+
+        <link href="~/css/skins/Tabmenu_admin.css" rel="stylesheet" type="text/css" />
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+     <style type="text/css">
+        
+          
+            .textbox_in_back
+            {
+                border: 1px solid #bfbfbf;
+                padding-left: 3px;
+            }
+
+            .button_in_back
+            {
+                border: 1px solid #bfbfbf;
+                padding-right: 15px;
+                padding-left: 15px;
+                border-radius: 4px;
+                padding-bottom: 3px;
+                background-color: #dedede;
+                background-image: url('../../image/Back/Bg_Button_in_back.png');
+                background-repeat: repeat-x;
+                text-shadow: 0.1em 0.1em #fff;
+                cursor: pointer;
+            }
+    
+    </style>
+    </asp:ContentPlaceHolder>
+</head>
+<center>
+<body>
+    <form id="form1" runat="server">
+       
+    <div class="Header"></div>
+    <div id="menu">
+	        <ul>
+		        <li id="tab"><a href="../../FrontYard/Home.aspx">หน้าเว็บหลัก</a></li>
+              <li id="tab"><a href="MainAdmin.aspx">หน้าหลักผู้ดูแลระบบ</a></li>
+                <li id="tab"><a href="#">จัดการข่าวสาร</a>
+		            <ul class="sub-menu">
+			            <li><a href="searchBranchNews.aspx">จัดการข่าวสาขา</a></li>
+			            <li><a href="SearchTrainning.aspx">จัดการข่าวฝึกอบรม</a></li>
+                        <li><a href="SearchWorkBranchNews.aspx">จัดการข่าวผลงานสาขา</a></li>
+                        <li><a href="SearchStudentNews.aspx">จัดการข่าวกิจกรรมนักศึกษา</a></li>
+		                 <li><a href="searchSlideShow.aspx">จัดการสไลโชว์</a></li>
+                    </ul>
+		        </li>
+
+		        <li id="tab"><a href="#">จัดการข้อมูลส่วนหน้า</a>
+		            <ul class="sub-menu">
+			            <li><a href="manageContentMain.aspx">แนะนำสาขา</a></li>
+			            <li><a href="#">บุคลากร</a></li>
+                        <li><a href="ManageCurriculum.aspx">โครงสร้างหลักสูตร</a></li>
+                        <li><a href="manageContentMain.aspx">เกณฑ์การคัดเลือก</a></li>
+                        <li><a href="manageContentMain.aspx">อาชีพสายงาน</a></li>
+                        <li><a href="Main_Alumni.aspx">ตัวอย่างนักศึกษาศิษย์เก่า</a></li>
+                         <li><a href="manageContentMain.aspx">แนะนำประกันคุณภาพ</a></li>
+			            <li><a href="SearchAssurance.aspx">เอกสารประกันคุณภาพ</a></li>
+		            </ul>
+		        </li>
+              
+                  <li id="tab"><a href="#">จัดการข้อมูลหลัก</a>
+		            <ul class="sub-menu">
+                    	 <li><a href="AddCurriculum.aspx">จัดการหลักสูตร</a></li>	
+                          <li><a href="SearchSubject.aspx">สร้างรายวิชา</a></li>
+			            <li><a href="AddPlanEducate.aspx">สร้างสร้างแผนการเรียน</a></li>
+                      <%--   <li><a href="mainDetailTeach.aspx">สร้างรายละเอียดการสอน</a></li>	--%>
+                              <li><a href="OpenNewEducationTeach.aspx">เปิดรายวิชาปีการศึกษาใหม่</a></li>	
+	                     <li><a href="ManageDetailTeach.aspx">อนุมัติวิชาที่เปิดสอน</a></li>	
+                          <li><a href="Main_Manage_Plan.aspx">ทดสอบหน้าจัดการใหม่</a></li>	
+                      
+		            </ul>
+		        </li>
+		  
+                    <li id="tab"><a href="#">จัดการกระทู้</a>
+		            <ul class="sub-menu">
+			            <li><a href="ApproveKm.aspx">องค์ความรู้</a></li>
+		            </ul>
+		        </li>
+
+                    <li id="tab"><a href="#">จัดการผู้เข้าใช้ระบบ</a>
+		            <ul class="sub-menu">
+			            <li><a href="ManageUserTeacher.aspx">จัดการข้อมูลอาจารย์</a></li>
+                       <li><a href="ManageUserEmployee.aspx">จัดการข้อมูลพนักงาน</a></li>
+                       <li><a href="ManageUseStudent.aspx"> จัดการข้อมูลนักศึกษา</a></li>
+		            </ul>
+		        </li>
+
+                <li id="tab"><a href="../../Authen/Login.aspx">ออกจากระบบ</a></li>
+	        </ul>
+
+    </div>
+
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</center>
+</html>

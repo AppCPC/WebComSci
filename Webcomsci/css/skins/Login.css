@@ -1,0 +1,141 @@
+﻿body
+{
+    background-position: center center;
+    margin: 0px;
+    background-color: #C2C2C2;
+    background-repeat: repeat;
+    background-image: url('../../image/Login/Background.jpg');
+}
+
+p
+{
+    margin: 0px;
+}
+
+textarea, input
+{
+    outline: none;
+    font-family: tahoma;
+    font-size: small;
+}
+
+.top
+{
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 55px;
+}
+
+.login
+{
+    background-image: url('../../image/Login/Login.png');
+    background-repeat: no-repeat;
+    width: 473px;
+    height: 319px;
+    margin-top: 130px;
+}
+
+.cstext
+{
+    font-family: 'Segoe UI';
+    font-size: 21px;
+    float: left;
+}
+
+.logintext
+{
+    font-family: 'Segoe UI';
+    font-size: 21px;
+    color: #fff;
+    float: left;
+    clear: right;
+}
+
+.textbox
+{
+    background-image: url('../../image/Login/Textbox.jpg');
+    background-repeat: repeat-x;
+    margin-bottom: 10px;
+    font-family: tahoma;
+    font-size: small;
+}
+
+
+.textbox:focus
+{
+    background-repeat: repeat-x;
+    background-image: url('../../image/Login/TextboxHover.jpg');
+}
+
+.button_in_login
+{
+    border: 1px solid #bfbfbf;
+    font-size: small;
+    height: 26px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 4px;
+    font-family: tahoma;
+    padding-bottom: 3px;
+    background-color: #dedede;
+    background-image: url('../../image/Back/Bg_Button_in_back.png');
+    background-repeat: repeat-x;
+    text-shadow: 0.1em 0.1em #fff;
+    cursor: pointer;
+}
+
+.button_in_login:hover
+{
+    background-color: #D2D2D2;
+    background-image: url('../../image/Back/Bg_Button_in_back.png');
+    background-repeat: repeat-x;
+}
+
+.button_in_login:active
+{
+    
+    cursor: pointer;
+    background-image: url('../../image/Back/Bg_Button_in_backHover.jpg');
+    background-repeat: repeat-x;
+}
+
+a:link, a:visited
+{
+    margin: 0px;
+    color: #FFFFFF;
+    font-family: Tahoma, 'Times New Roman' , Times, serif;
+    font-size: small;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #CCCCCC;
+    font-family: Tahoma, 'Times New Roman' , Times, serif;
+    font-size: small;
+    text-decoration: none;
+}
+
+#linkfooter
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #666666;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#linkfooter:hover
+{
+    color: #999999;
+}
+
+
+
+
+
+
+
+
+
+

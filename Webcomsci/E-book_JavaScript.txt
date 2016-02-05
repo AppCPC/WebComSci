@@ -1,0 +1,50 @@
+﻿
+/***************** ex1 ******************************/
+<head runat="server">
+    <title></title>
+    <script type="text/javascript">
+        function HandleIT() {
+            var name = document.getElementById('<%=txtname.ClientID %>').value;
+            var address = document.getElementById('<%=txtaddress.ClientID %>').value;
+
+            PageMethods.ProcessIT(name, address, onSucess, onError); 
+            function onSucess(result) {
+                alert(result);
+            }
+
+            function onError(result) {
+                alert('Something wrong.');
+            }
+        }
+    </script>
+</head>
+---------------------------------------
+[WebMethod]
+    public static string ProcessIT(string name, string address)
+    {
+        string result = "Welcome Mr. " + name + ". Your address is '" + address + "'.";
+        return result;
+    }
+http://www.c-sharpcorner.com/UploadFile/abhikumarvatsa/calling-an-Asp-Net-C-Sharp-method-web-method-using-javascript/
+
+
+/*************** Ex 2*****************************************/
+<script language="javascript" type="text/javascript">
+function CheckNulls()
+{
+if(document.getElementById("<%= txtName.ClientID %>").value=="")
+{
+document.getElementById("<%= txtName.ClientID %>").focus();
+alert("username cannot be empty");
+return false;
+}
+return true;
+}
+
+</script>
+
+<div>
+<asp:TextBox ID="txtName" runat="server" ></asp:TextBox>
+<asp:Button ID="BTN" runat="Server" Text="search" OnClick="BTN_Click" OnClientClick="javascript:return CheckNulls();" />
+</div>
+
