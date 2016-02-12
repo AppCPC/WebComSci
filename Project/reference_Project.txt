@@ -1,0 +1,44 @@
+﻿/*Modal Popup */
+ eference Modalpoup: http://gugiaji.wordpress.com/2012/03/19/create-a-popup-dialog-with-modalpopupextender-ajaxcontroltoolkit/
+
+
+ /*refresh web page*/
+  <meta http-equiv="refresh" content="5;url=../../FrontYard/Home.aspx"/> 
+
+  /*timer in C# */
+  DateTime viewTime;
+
+viewTime = DateTime.Now;
+
+DateTime viewTime2 = viewTime.AddSeconds(30.0);
+
+while (viewTime < viewTime2)
+
+{
+
+viewTime = DateTime.Now;
+
+if (viewTime > viewTime2)
+
+{
+
+Response.Redirect(sUrl);
+
+}
+}
+
+
+
+/*********************refresh gride*******************************/
+http://csharpdotnetfreak.blogspot.com/2012/08/auto-refresh-update-gridview-in-aspnet-ajax-timer.html
+/*********************************************************************/
+
+
+/*********************** update progresss **********************/
+http://csharpdotnetfreak.blogspot.com/2012/07/updateprogress-control-example-in-aspnet.html
+/************************************************************/
+
+
+/**********************request query string Encryp-Decryp **************************/
+http://www.codeproject.com/Articles/33350/Encrypting-Query-Strings
+/**********************************************************************************/

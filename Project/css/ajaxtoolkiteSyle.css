@@ -1,0 +1,687 @@
+﻿
+/*modal popup cs*/
+.modalbackground
+{
+    background-color: Gray;
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+}
+.modalpopup
+{
+    /* background-color:White;     padding:6px 6px 6px 6px;     margin-top:-35px;*/
+    border: 2px solid Black;
+    background-color: White;
+    padding: 3px;
+}
+
+   .className
+{
+    /*background: url('../image/Admin/book_open.png') no-repeat 0 0;
+    border: 0;
+    height: 61px;
+    width: 60px;
+    background-color: #C0C0C0;*/
+    background-position: left top;
+    border: 1px solid #bfbfbf;
+    padding-right: 30px;
+    padding-left: 10px;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    background-color: #dedede;
+    background-image: url('../image/Admin/book_open.png');
+    background-repeat: no-repeat;
+    text-shadow: 0.1em 0.1em #fff;
+    cursor: pointer;
+}
+
+.iconswap
+{
+    background-position: left top;
+    border: 1px solid #bfbfbf;
+    padding-right: 30px;
+    padding-left: 10px;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    background-color: #dedede;
+    background-image: url('../image/Admin/switch.png');
+    background-repeat: no-repeat;
+    text-shadow: 0.1em 0.1em #fff;
+    cursor: pointer;
+}
+
+
+.modalpopupNews
+{
+    margin-top: -50px;
+    border: 2px solid Black;
+    background-color: White;
+    padding: 3px;
+}
+
+
+.modalpopupUser
+{
+    margin-top: -10px;
+    border: 2px solid Black;
+    background-color: White;
+    padding: 3px;
+    width: 750px;
+    height: 620px;
+}
+
+.auto-style19
+{
+    width: 185px;
+}
+.auto-style24
+{
+    width: 113px;
+}
+.auto-style25
+{
+    width: 113px;
+    height: 25px;
+}
+.auto-style26
+{
+    width: 468px;
+    height: 25px;
+}
+
+/*calendar**/
+.MyCalendar .ajax__calendar_container
+{
+    background-color: #216597;
+    color: White;
+    font-family: Tahoma, 'Times New Roman' , Times, serif;
+    font-size: small;
+    background-repeat: no-repeat; /**  background-image: url('../Images/BGCalendar.jpg');*/
+    background-color: Gray;
+}
+
+.MyCalendar .ajax__calendar_other .ajax__calendar_day, .MyCalendar .ajax__calendar_other .ajax__calendar_year
+{
+    color: black;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day, .MyCalendar .ajax__calendar_hover .ajax__calendar_month, .MyCalendar .ajax__calendar_hover .ajax__calendar_year
+{
+    color: #00FFFF;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day, .MyCalendar .ajax__calendar_active .ajax__calendar_month, .MyCalendar .ajax__calendar_active .ajax__calendar_year
+{
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+.auto-style27
+{
+    width: 468px;
+}
+
+.ButSearch
+{
+    padding-top: 10px;
+}
+
+/*===============
+หน้า POST
+================*/
+
+.txtbox_in_post, .txtare_in_post
+{
+    padding: 3px;
+    border: 1px solid #898989;
+}
+
+
+.post_time
+{
+    width: 526px;
+    height: 16px;
+    text-align: right;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.UsernameComment
+{
+    font-size: small;
+    font-family: tahoma;
+    font-weight: bold;
+    color: #157EA2;
+    float: left;
+    margin-right: 7px;
+}
+
+.UsernameComment:hover
+{
+    text-decoration: underline;
+    color: #1DB1E2;
+}
+
+.UsernameStatusPost
+{
+    color: #157EA2;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.UsernameStatusPost:hover
+{
+    text-decoration: underline;
+    color: #1DB1E2;
+}
+
+.commentPostBoxBody
+{
+    float: left;
+    background-image: url('../../image/Post/BodyComment2.png');
+    background-repeat: repeat-y;
+    width: 507px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+.commentPostBoxButtom
+{
+    background-image: url('../../image/Post/ButtomComment2.png');
+    background-repeat: no-repeat;
+    width: 582px;
+    height: 7px;
+    float: left;
+}
+
+.statusPost
+{
+    font-family: 'Tahoma';
+    font-size: 10pt;
+    text-align: left;
+}
+
+.mainPost
+{
+    float: left;
+    width: 588px;
+    padding-top: 20px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.post
+{
+    float: left;
+    margin-bottom: 2px;
+    clear: both;
+}
+
+.postBoxtop
+{
+    background-image: url('../../image/Post/TopComment.png');
+    background-repeat: no-repeat;
+    width: 582px;
+    height: 34px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.postBoxBody
+{
+    background-image: url('../../image/Post/BodyComment.png');
+    background-repeat: repeat-y;
+    width: 582px;
+    float: left;
+    padding-bottom: 4px;
+}
+
+.postComment
+{
+    float: left;
+    font-family: tahoma;
+    font-size: small;
+    color: #000000;
+}
+
+.textboxComment
+{
+    border: 1px solid #CCCCCC;
+    font-family: tahoma;
+    font-size: small;
+    color: #000000;
+    width: 440px;
+    height: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.commentBox
+{
+    padding: 5px 7px 5px 7px;
+    background-color: #EFEFEF;
+    width: 496px;
+    background-repeat: repeat;
+    float: left;
+    margin-top: 2px;
+}
+
+.iconClock
+{
+    margin-right: 7px;
+    position: relative;
+    top: 3px;
+    left: 0px;
+}
+
+.timeStatusPost
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #999999;
+    text-align: left;
+    padding-right: 30px;
+    float: right;
+}
+
+.timeStatusPost:hover
+{
+    color: #666666;
+    cursor: default;
+}
+
+.timeCommentPost
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #999999;
+    padding-top: 4px;
+    padding-right: 5px;
+    float: right;
+    width: 90%;
+    text-align: right;
+}
+
+.timeCommentPost:hover
+{
+    color: #666666;
+    cursor: default;
+}
+
+
+.displayUserStatus
+{
+    width: 70px;
+    height: 70px;
+}
+
+.displyUserComment
+{
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-right: 7px;
+}
+
+.picDisplayPost
+{
+    border-width: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.showAllComment
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #666666;
+    float: left;
+}
+
+.showAllComment:hover
+{
+    text-decoration: underline;
+    color: #333333;
+}
+
+
+
+/*__________อันใหม่___________*/
+
+.post_area
+{
+    margin-bottom: 20px;
+    float: left;
+    padding-left: 60px;
+    width: 92%;
+}
+
+.post_status_box
+{
+    border: 1px solid #898989;
+    padding: 10px 10px 10px 20px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 525px;
+    border-radius: 8px;
+}
+
+.post_comment_box
+{
+    background-color: #FFFFFF;
+    width: 520px;
+    border-radius: 0px 0px 8px 8px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-color: #898989;
+    border-bottom-color: #898989;
+    border-left-color: #898989;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.post_status-comment_area
+{
+    width: 555px;
+    float: left;
+}
+
+.status_profile_img_box
+{
+    border: 1px solid #999;
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.status_profile_img_box img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.comment_profile_img_box
+{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.comment_profile_img_box img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
+
+.arrow_post_status_box
+{
+    width: 30px;
+    height: 27px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-image: url('../image/Post/arrow_comment.png');
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5px;
+    left: 1px;
+}
+
+.timepost
+{
+    float: right;
+    font-family: tahoma;
+    font-size: small;
+    color: #999;
+    margin-right: 10px;
+    width: 138px;
+    margin-top: -11px;
+}
+
+.timepost2
+{
+    float: right;
+    font-family: tahoma;
+    font-size: small;
+    color: #999;
+    margin-right: 10px;
+    width: 138px;
+    margin-top: -20px;
+}
+
+.text_status
+{
+    width: 507px;
+    margin-bottom: 10px;
+    clear: both;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 10px;
+}
+
+.text_status_showall
+{
+    width: 507px;
+    margin-bottom: 10px;
+    clear: both;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 10px;
+}
+
+.less_text_status,.less_text_comment
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #999;
+    display: none;
+}
+
+.less_text_status:hover,.less_text_comment:hover
+{
+    text-decoration: underline;
+    color: #333333;
+    cursor: pointer;
+}
+
+.text_comment
+{
+    width: 436px;
+    font-family: tahoma;
+    font-size: small;
+    padding-top: 10px;
+    float: left;
+    padding-left: 10px;
+}
+
+
+
+.text_comment_showall
+{
+    width: 436px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: left;
+    font-family: tahoma;
+    font-size: small;
+}
+
+.user_name_status_post
+{
+    color: #157EA2;
+    font-size: medium;
+    font-family: tahoma;
+}
+
+.user_name_status_post:hover
+{
+    text-decoration: underline;
+    color: #1DB1E2;
+    cursor: pointer;
+}
+
+.user_name_status_post_box
+{
+    float: left;
+    padding-left: 10px;
+    width: 404px;
+}
+
+.user_name_comment_post
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #157EA2;
+}
+
+.user_name_comment_post:hover
+{
+    text-decoration: underline;
+    color: #1DB1E2;
+    cursor: pointer;
+}
+
+.readmore
+{
+    color: #999;
+    font-family: tahoma;
+    font-size: small;
+}
+
+.readmore:hover
+{
+    text-decoration: underline;
+    color: #333333;
+    cursor: pointer;
+}
+
+.show_all_comment
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #333333;
+}
+
+.show_all_comment:hover
+{
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.txt_comment_box
+{
+    float: left;
+    width: 448px;
+}
+
+
+.btn_del_post
+{
+    float: right;
+    display: none;
+}
+
+.post_status_box:hover .btn_del_post
+{
+    display: block;
+}
+
+.comment_post_box
+{
+    padding: 5px;
+    background-color: #efefef;
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 495px;
+}
+
+.comment_post_box:hover .btn_del_post
+{
+    display: block;
+    margin-right: 5px;
+}
+
+.post_status_top_box_right
+{
+    float: left;
+    width: 135px;
+    display:none;
+}
+
+.post_status_top_box_left
+{
+    float: right;
+    width: 412px;
+    height: 102px;
+}
+
+
+a.morelink
+{
+    text-decoration: none;
+    outline: none;
+    color: #999;
+    float: left;
+}
+
+a.morelink:hover
+{
+    text-decoration: underline;
+}
+
+.morecontent span {
+	display: none;
+}
+
+a.morelink2
+{
+    text-decoration: none;
+    outline: none;
+    color: #999;
+    float: left;
+}
+
+a.morelink2:hover
+{
+    text-decoration: underline;
+}
+.morecontent2 span {
+	display: none;
+
+}
+
+ .textbox_in_back
+    {
+        border: 1px solid #bfbfbf;
+        padding-left: 3px;
+    }
+
+    .button_in_back
+    {
+        border: 1px solid #bfbfbf;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 4px;
+        padding-bottom: 3px;
+        background-color: #dedede;
+        background-image: url('../../image/Back/Bg_Button_in_back.png');
+        background-repeat: repeat-x;
+        text-shadow: 0.1em 0.1em #fff;
+        cursor: pointer;
+    }

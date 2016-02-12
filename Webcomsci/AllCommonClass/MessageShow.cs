@@ -9,8 +9,7 @@ using System.Web.UI.WebControls;
 namespace Webcomsci
 {
     public class MessageShow : System.Web.UI.Page
-    {
-
+    { 
         public  void ShowMessageWeb(string msg)
         {
             StringBuilder sb = new StringBuilder();

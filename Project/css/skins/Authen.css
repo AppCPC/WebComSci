@@ -1,0 +1,152 @@
+﻿body
+{
+    background-position: center top;
+    margin: 0px;
+    background-image: url('../../image/Authen/Background.jpg');
+    background-color: #ECECEC;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header
+{
+    /*background-color: #2672EC;*/
+    background-color: #C7C7C7;
+    width: 100%;
+    height: 40px;
+}
+
+.content
+{
+    font-family: tahoma;
+    font-size: small;
+    width: 424px;
+}
+
+.cellHigh
+{
+    height: 30px;
+    font-family: tahoma;
+    font-size: small;
+}
+
+#left
+{
+    text-align: left;
+}
+
+#right
+{
+    text-align: right;
+    padding-right: 5px;
+}
+
+#headtext
+{
+    text-align: left;
+    font-family: tahoma;
+    font-size: large;
+    background-color: #2672EC;
+    color: #FFFFFF;
+}
+
+a:link, a:visited
+{
+    margin: 0px;
+    color: #000;
+    font-family: Tahoma, 'Times New Roman' , Times, serif;
+    font-size: small;
+    text-decoration: none;
+}
+
+.loginbut
+{
+    float: right;
+    padding-top: 9px;
+    height: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000000;
+}
+
+.loginbut:hover
+{
+    background-color: #949494;
+    color: #FFFFFF;
+}
+
+.logo
+{
+    background-position: center center;
+    float: left;
+    height: 30px;
+    width: 53px;
+    background-image: url('../../image/Authen/Logo.png');
+    background-repeat: no-repeat;
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.logo:hover
+{
+    background-position: center center;
+    background-color: #949494;
+    background-image: url('../../image/Authen/LogoHover.png');
+    background-repeat: no-repeat;
+}
+
+p
+{
+    margin: 0px;
+    font-family: tahoma;
+    font-size: small;
+}
+
+.textbox
+{
+    margin-bottom: 25px;
+    font-family: tahoma;
+    font-size: small;
+    width: 275px;
+    height: 28px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#head
+{
+    font-family: 'Angsana New';
+    font-size: 28pt;
+    text-align: left;
+}
+
+.button
+{
+    height: 28px;
+    font-family: tahoma;
+    font-size: small;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.button:hover
+{
+    background-color: #737373;
+    color: #FFFFFF;
+}
+
+#linkfooter
+{
+    font-family: tahoma;
+    font-size: small;
+    color: #666666;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#linkfooter:hover
+{
+    color: #999999;
+}
+

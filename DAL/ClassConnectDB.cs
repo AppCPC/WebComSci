@@ -28,8 +28,7 @@ namespace DAL
 
             ConnectDB connpath = new ConnectDB();
             objConn = new SqlConnection();
-            strConnString = connpath.connectPath();
-            
+            strConnString = connpath.connectPath(); 
             #endregion
 
         }

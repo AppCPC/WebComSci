@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessSqlDb.cs" />
+    <Compile Include="ClsMail.cs" />
     <Compile Include="ConvertClass.cs" />
     <Compile Include="cSourceData.cs" />
     <Compile Include="DistrictDataTable.cs" />

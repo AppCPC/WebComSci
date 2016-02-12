@@ -1,0 +1,317 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Front.Master.cs" Inherits="MasterPage_Front" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<link rel="shortcut icon" type="image/x-icon" href="../image/computer.png">
+    <title></title>
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+<%--<script type='text/javascript' src='~/js/jquery.dcjqaccordion.2.7.min.js'></script>--%>
+   <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.dcjqaccordion.2.7.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        $('#accordion-1').dcAccordion({
+            eventType: 'click',
+            autoClose: true,
+            saveState: true,
+            disableLink: true,
+            speed: 'fast',
+            showCount: true,
+            autoExpand: true,
+            cookie: 'dcjq-accordion-1',
+            classExpand: 'dcjq-current-parent'
+        });
+        $('#accordion-2').dcAccordion({
+            eventType: 'click',
+            autoClose: false,
+            saveState: true,
+            disableLink: true,
+            speed: 'fast',
+            classActive: 'test',
+            showCount: true
+        });
+        $('#accordion-3').dcAccordion({
+            eventType: 'click',
+            autoClose: false,
+            saveState: false,
+            disableLink: false,
+            showCount: false,
+            speed: 'fast'
+        });
+        $('#accordion-4').dcAccordion({
+            eventType: 'hover',
+            autoClose: true,
+            saveState: true,
+            disableLink: true,
+            menuClose: false,
+            speed: 'fast',
+            showCount: true
+        });
+        $('#accordion-5').dcAccordion({
+            eventType: 'hover',
+            autoClose: false,
+            saveState: true,
+            disableLink: true,
+            menuClose: true,
+            speed: 'fast',
+            showCount: true
+        });
+        $('#accordion-6').dcAccordion({
+            eventType: 'hover',
+            autoClose: false,
+            saveState: false,
+            disableLink: false,
+            showCount: false,
+            menuClose: true,
+            speed: 'fast'
+        });
+    });
+</script>
+<link href="~/css/skins/blue.css" rel="stylesheet" type="text/css" />
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+      <style type="text/css">
+            
+        .style4
+        {
+            width: 100%;
+        }
+    
+         .style6
+        {
+            width: 233px;
+            height: 21px;
+        }
+    
+        p.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	        text-align: center;
+        }
+    
+    p.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+span.style51
+	{color:red;
+        }
+p.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+        
+        .style7
+        {
+            font-size: small;
+        }
+        
+        .style10
+        {
+            width: 205px;
+            height: 62px;
+        }
+        
+        .style14
+        {
+            width: 59px;
+            height: 59px;
+        }
+        #imgkey
+        {
+            border:0;
+            }
+        
+    </style>
+
+
+</head>
+<body style = "margin:0px; height: 2px;background-image: url('/image/screen.jpg');">
+    <center>
+    <form id="form1" runat="server">
+
+    <div style="margin-top: 5px">
+    <div class="head" id="headja" runat="server">
+    
+             <a id="linkLog" runat=server>
+           <div   style="background-position: left center; width: 134px; height: 14px; position: relative; top: 159px; left: 387px; cursor: pointer;background-repeat: no-repeat; font-family: tahoma; font-size: small;" 
+            title="เข้าสู่ระบบ" align="right" >
+               <asp:Image ID="imgkey"  runat="server" ImageUrl="~/image/key.png" /> 
+            <asp:Label ID="lbluser" runat="server" Text=""></asp:Label></div></a>
+             
+            <div  style="width: 378px; height: 14px; position: relative; top: 145px; left: 133px; font-family: tahoma; font-size: small; color: #5B5B5B; " 
+                 align="right">มหาวิทยาลัยเทคโนโลยีราชมงคลตะวันออก วิทยาเขตจักพงษภูวนารถ </div>
+    </div>
+            
+    </div>
+   
+    <div style="background-color: #116782; width: 962px; padding-top: 20px;">
+    
+                <table border="0" cellpadding="0" cellspacing="0" class="style4">
+                                     
+                <tr valign="top">       
+                        <td class="style6" style="padding-left: 10px">
+           <div style="background-image: url('/image/HeadMenu.png'); background-repeat: no-repeat; height: 34px;">
+                            &nbsp;</div>
+        
+                            <%--style="background-position: left; background-color: #1688AD; background-image: url('/image/sss3.jpg'); background-repeat: repeat-y;">--%>
+                         
+                            
+                            
+                            <div style="padding-right: 10px; padding-left: 10px; background-image: url('/image/bodyMenu.png'); background-repeat: repeat-y; padding-top: 10px;">
+                                <div class="blue demo-container">
+                                    <ul class="accordion" id="accordion-3">
+                                        <li style="list-style-type: none; text-align: center;">
+                                            <a href="#" style="background-repeat: no-repeat; background-position: left center; background-image: url('/image/home 55.png');">หน้าแรก</a><ul>
+                                                <li style="list-style-type: none"><a href="../FrontYard/Home.aspx">หน้าแรก</a></li>
+                                                <li style="list-style-type: none"><a href="../FrontYard/showAllBranchNews.aspx">ข่าวสาขา</a></li>
+                                                 <li style="list-style-type: none"><a href="../FrontYard/showAllTrainningNews.aspx">ช่าวฝึกอบรม</a></li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style-type: none; text-align: center;">
+                                            <a href="#"style="background-image: url('/image/cinema_display_blue (1).png'); background-repeat: no-repeat; background-position: left;">เกี่ยวกับสาขา</a>
+                                            <ul>
+                                                <li style="list-style-type: none"><a href="../FrontYard/Recommended_stores.aspx">แนะนำสาขา</a></li>    
+                                                 <li style="list-style-type: none"><a href="../FrontYard/showAllWorkBranchNews.aspx">ผลงานสาขา</a></li>                                    
+                                                <li style="list-style-type: none"><a href="../FrontYard/Personnel.aspx">บุคลากร</a></li>
+                                                <li style="list-style-type: none"><a href="../FrontYard/Curriculum.aspx">โครงสร้างหลักสูตร</a></li>
+                                                <li style="list-style-type: none"><a href="../FrontYard/Study.aspx">เกณฑ์การคัดเลือกเรียน</a></li>
+                                                <li style="list-style-type: none"><a href="../FrontYard/Career_in_works.aspx">อาชีพในสายงาน</a></li>
+                                              
+                                            </ul>
+                                        </li>
+                                        <li style="list-style-type: none; text-align: center;"><a href="#" 
+                                                
+                                                style="background-image: url('/image/data_transfer (1).png'); background-repeat: no-repeat; background-position: left">ประกันคุณภาพ</a>
+                                            <ul>
+                                               <%-- <li style="list-style-type: none"><a href="Quality_assurance.aspx">แนะนำประกันคุณภาพ</a></li>--%>
+                                                <li style="list-style-type: none" class="style7">
+                                                    <a href="Quality_assurance_documents.aspx">เอกสารประกันคุณภาพ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style-type: none; text-align: center;"><a href="#" 
+                                                
+                                                style="background-image: url('/image/user_administrator_blue_01 (1).png'); background-repeat: no-repeat; background-position: left">นักศึกษา</a>
+                                            <ul>
+                                                <%--<li style="list-style-type: none"><a href="Student_News.aspx">ข่าวกิจกรรมจากนักศึกษา</a></li>--%>
+                                                <li style="list-style-type: none"><a href="../FrontYard/showAllStudentNews.aspx">ข่าวกิจกรรมนักศึกษา</a></li>
+                                                <li style="list-style-type: none"><a href="Alumni.aspx">ศิษย์เก่า</a></li>
+                                            </ul>
+                                        </li>
+                                      </ul>
+                                </div>
+                   </div>
+                           <div style="background-image: url('/image/FooterMenu.png'); background-repeat: no-repeat; height: 19px;">
+                               &nbsp;</div>
+
+                            <div style="margin-top: 20px; background-image: url('/image/HeadMenuWeb.png'); background-repeat: no-repeat; height: 34px;">
+                                &nbsp;</div>
+                            <div align="center" 
+                                style="background-repeat: repeat-y; background-image: url('/image/bodyMenu.png')">
+                                <a href="http://www.onesqa.or.th/onesqa/th/home/index.php">
+                                <img alt="" class="style10" src="../../image/Web/www.mua.go.png" 
+                                    style="border: 1px solid #000000; margin-top: 5px" /></a><br />
+                                <a href="http://www.mua.go.th/">
+                                <img alt="" class="style10" src="../../image/Web/www.onesqa.or.png" 
+                                    style="border: 1px solid #000000; margin-top: 5px" /></a><br />
+                                <a href="http://www.opdc.go.th/index.php">
+                                <img alt="" class="style10" src="../../image/Web/www.opdc.go.png" 
+                                    style="border: 1px solid #000000; margin-top: 5px" /></a></div>
+                            <div style="background-image: url('/image/FooterMenu.png'); background-repeat: no-repeat; height: 19px;">
+                                &nbsp;</div>
+
+
+                             <!--   <div style="background-image: url('/image/HeadMenuWebonline.png'); background-repeat: no-repeat; margin-top: 20px; height: 34px;"></div>
+                                <div align="center" 
+                                style="background-image: url('/image/bodyMenu.png'); background-repeat: repeat-y;">
+                                    <a href="http://www.facebook.com">
+                                    <img alt="" class="style14" src="../../image/Web/facebook_icon.png" 
+                                        style="border-width: 0px; margin-top: 8px; margin-right: 5px;" 
+                                        title="Facebook" /></a><a 
+                                        href="http://www.youtube.com"><img alt="" class="style14" 
+                                        src="../../image/Web/youtube_icons.png" 
+                                        style="border-width: 0px; margin-top: 8px; margin-right: 5px;" 
+                                        title="Youtube" /></a><a 
+                                        href="http://twitter.com"><img alt="" class="style14" 
+                                        src="../../image/Web/twister.png" 
+                                        style="border-width: 0px; margin-top: 8px; margin-right: 5px;" 
+                                        title="Twister" /></a></div>
+                                <div style="background-image: url('/image/FooterMenu.png'); background-repeat: no-repeat; height: 19px;"></div>
+                                -->
+
+
+
+
+
+                           
+                        </td>
+
+                        <td align="left" style="vertical-align: top">
+                           <div align="center" style="background-image: url('/image/HeadContent.png'); background-repeat: no-repeat; margin-left: 7px; height: 29px;">&nbsp;</div>
+                         
+                              <div style="width: 690px; margin-left: 7px; background-repeat: repeat-y; background-image: url('/image/BodyContent.png'); display: table-caption;">
+                      
+                                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                
+                            </asp:ContentPlaceHolder>
+                          
+                             </div>
+                          
+                           <div align="center" 
+                                
+                                
+                                
+                                style="background-image: url('/image/FooterContent.png'); background-repeat: no-repeat; margin-left: 7px; height: 29px;">
+                               &nbsp;</div>
+
+            
+                                
+                         </td>
+                    </tr>
+
+                    <tr>
+                      <%--  <td colspan="2" style="background-color:#09f; text-align:center; color:#fff">
+                             &nbsp;</td>--%>
+                    </tr> 
+                    
+                </table> 
+                </div>
+            <div style="width: 962px; background-image: url('/image/FooterBody.png'); background-repeat: no-repeat; height: 32px; padding-left: 0px; margin-bottom: 5px;">
+                &nbsp;</div>
+          
+          
+    </form>
+    </center>
+</body>
+</html>

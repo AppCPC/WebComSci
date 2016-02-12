@@ -1,0 +1,194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Plan.Master.cs" Inherits="MasterPage_Plan" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../css/skins/Back.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #TextArea1
+        {
+            height: 42px;
+            width: 333px;
+        }
+        #Text1
+        {
+            width: 255px;
+        }
+    </style>
+</head>
+<div class="HeadSite2">
+    <center>
+        <div style="width: 1024px">
+            <div align="left" class="logo">
+                <img alt="" class="imgLogo" src="/image/Login/Logo.png" /></div>
+            <div class="headcontent" style="text-align: right; width: 633px;">
+            </div>
+            <div class="headcontentRight">
+                <div style="float: right; width: 31px; height: 29px; padding-top: 3px;" class="displayimgHead">
+                    <a href="../setting/profile.aspx">
+                        <asp:image runat="server" id="imgUser" cssclass="imgProfile" height="29px" width="31px"></asp:image>
+                    </a>
+                </div>
+                <p style="width: 79px; float: right; height: 16px; padding-top: 10px;" id="P1" align="left">
+                    <a href="../../Authen/Login.aspx?log=logout" class="linkColor">ออกจากระบบ</a>
+                </p>
+                <p style="width: 14px; float: right; padding-top: 10px;" id="P2" align="center">
+                    |
+                </p>
+                <p style="width: 102px; float: right; padding-top: 10px;" id="P3">
+                    <a href="../../FrontYard/Home.aspx" class="linkColor">หน้าเว็บสาขา</a></p>
+            </div>
+        </div>
+    </center>
+</div>
+<body>
+    <center>
+        <form id="form1" runat="server">
+        <div style="width: 1024px; padding-top: 50px;">
+            <div align="left" style="height: 160px">
+                <div align="center" class="displayimg">
+
+                  <%--  <img alt="" class="imgProfile" src="/image/User.png" />--%>
+                    <asp:Image ID="imgProfile" CssClass="imgProfile" runat="server" />
+                    </div>
+                <div class="nameProfile" style="margin-top: 40px">
+                    <a href="../setting/profile.aspx">
+                        <asp:Label ID="lblname" runat="server" Width="100%" CssClass="labelName"></asp:Label>
+                        <asp:Label ID="lblClass" runat="server" CssClass="labelClass"></asp:Label>
+                    </a>
+                </div>
+                <%--   <div style="float: left; width: 335px; height: 149px;">
+                    <textarea id="TextArea1" class="textarea" cols="20" name="S1" rows="2"></textarea></div>--%>
+            </div>
+            <div style="border-width: 1px; border-color: #000000; width: 1024px; float: left;
+                background-image: url('/image/Back/BG.png'); background-repeat: repeat-y;">
+                <div class="Menu">
+                    <ul style=" margin-left: 0px;">
+                        <li runat="server" id="b3">
+                            <%--  <a href="../Plane/Education2.aspx" class="b3">
+                   <asp:Button ID="Button2" runat="server" CssClass="b3" Text=""
+                       onclick="Button2_Click" />--%>
+                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="b3" OnClick="Button2_Click"></asp:LinkButton>
+                            </a></li>
+                        <li><a href="../ClassRoom/mainClassroom.aspx" class="b6"></a></li>
+                        <%-- <li style="button_menu"><a href="../Report/SelectRoomReport.aspx" class="b10"></a></li>--%>
+                         <li><a href="../KM/Knowledge.aspx" class="b7"></a></li>
+                       <li><a id="A2" href="~/WebPage/BackYard/setting/Set.aspx" class="b8" runat="server" ></a></li>
+                        <li><a id="A1" href="../Group/Group.aspx" class="b5" runat="server" visible=false></a></li>
+                        <li><a id="A3" href="../Post/My_posts.aspx" class="b1" runat="server" visible=false ></a></li>
+                        <li><a id="A4" href="../Post/Post_all.aspx" class="b2" runat="server" visible=false ></a></li>
+                        <li><a id="A5" href="../Photo/Photos2.aspx" class="b4" runat="server" visible=false ></a></li>
+                        <%-- <li><a href="../Admin/Admin1.aspx" class="b9" visible="false"></a></li>--%>
+                    </ul>
+                </div>
+                <div class="content" id="s1" style="background-color: #ececec">
+                    <div align="left">
+                        <img src="../../../image/Title/Plan.png" /></div>
+
+                    <div align="left" class="nav_menu">
+                         <a href="../Plane/Education2.aspx" id="AshowSubjectStudy" class="button_nav_menu_tree">แสดงรายวิชาที่นักศึกษาเรียน</a>
+                        <div class="nav_menu_space">
+                        </div>
+                        <a href="../Plane/Counsel.aspx" id="Aconsult" class="button_nav_menu_tree">ขอคำปรึกษา</a>
+                         <div class="nav_menu_space">
+                        </div>
+                        <a href="../Plane/PlanTreeEducation.aspx" id="ASubject" class="button_nav_menu_tree">ตรวจสอบรายวิชาตัวต่อ</a>
+
+                        <div class="nav_menu_space">
+                        </div>
+                     </div>
+                    <span id="headmenu" runat="server" visible="true">
+                        <div class="page_num_edu" align="left">
+                            <p style="padding-right: 10px; font-weight: bold;">
+                                เลือกหน้า:</p>
+                            <a href="../Plane/EducationPage1.aspx" id="PageId1_1" class="page_link">ปี 1 - ปี 3</a>
+                            <p>
+                                |</p>
+                            <a href="../Plane/EducationPage2.aspx" id="PageId2_1" class="page_link">ปี 4 - ปี 6</a>
+                            <p>
+                                |</p>
+                            <a href="../Plane/EducationPage3.aspx" id="PageId3_1" class="page_link">ปี 7 - ปี 8</a>
+                        </div>
+                    </span>
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="notation" id="des" runat="server">
+                        <p style="float: left; font-size: medium;">
+                            <strong>หมายเหตุ :</strong></p>
+                        <div class="notation_all_node">
+                            <div>
+                                <img src="../../../image/Edu/Circle/remark/Blue.png" /><p>
+                                    รายวิชาตามหลักสูตร</p>
+                            </div>
+                            <div>
+                                <img src="../../../image/Edu/Circle/remark/Orange.png" /><p>
+                                    รายวิชาที่ถอน</p>
+                            </div>
+                            <div>
+                                <img src="../../../image/Edu/Circle/remark/Red.png" /><p>
+                                    รายวิชาที่เรียนไม่ผ่าน</p>
+                            </div>
+                            <div>
+                                <img src="../../../image/Edu/Circle/remark/Green.png" /><p>
+                                    รายวิชาเรียนผ่านแล้ว</p>
+                            </div>
+                            <div>
+                                <img src="../../../image/Edu/Circle/remark/Gray.png" /><p>
+                                    รายวิชาตัวต่อที่เรียนไม่ได้</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <span id="footmenu" runat="server" visible="false">
+                        <div class="page_num_edu" align="left" style="padding-bottom: 40px">
+                            <p style="padding-right: 10px; font-weight: bold;">
+                                เลือกหน้า:</p>
+                            <a href="../Plane/EducationPage1.aspx" id="PageId1_2" class="page_link">ปี 1 - ปี 3</a>
+                            <p>
+                                |</p>
+                            <a href="../Plane/EducationPage2.aspx" id="PageId2_2" class="page_link">ปี 4 - ปี 6</a>
+                            <p>
+                                |</p>
+                            <a href="../Plane/EducationPage3.aspx" id="PageId3_2" class="page_link">ปี 7 - ปี 8</a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        </form>
+    </center>
+</body>
+</html>
+<script src="../../../Scripts/JScript1.js" type="text/javascript"></script>
+<script src="../../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $("body").click(function () {
+            //  $(".tooltip_counsel_box").fadeOut(400);
+            //  $(".tooltip_alert").fadeOut(400);
+        });
+
+        $(".imgBtnrRight").hover(
+         function () {
+             $(".tooltip_add_subject").fadeIn(100);
+         },
+         function () {
+             $(".tooltip_add_subject").fadeOut(100);
+         });
+
+        $(".imgBtnrLeft").hover(
+         function () {
+             $(".tooltip_remove_subject").fadeIn(100);
+         },
+         function () {
+             $(".tooltip_remove_subject").fadeOut(100);
+         });
+    });
+</script>

@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Authen.Master.cs" Inherits="MasterPage_Authen" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+   <link href="../css/skins/Authen.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+        #TextArea1
+        {
+            height: 42px;
+            width: 333px;
+        }
+        #Text1
+        {
+            width: 255px;
+        }
+        #MainContentAuthen {
+            margin-left:50px;
+            margin-right:50px;
+            
+        }
+        </style>
+</head>
+       <body>
+  <center>
+    <form id="form1" runat="server">
+    <div class="header">
+        <a style="margin-left: 10px;" class="logo" 
+            href="../../FrontYard/Home.aspx"></a>
+        <a style="margin-right: 10px; " href="../../Authen/Login.aspx" class="loginbut">เข้าสู่ระบบ</a>
+    </div>
+
+    <div style="padding-top: 10px; padding-left: 30px;">
+
+        <asp:ContentPlaceHolder ID="MainContentAuthen" runat="server">
+             
+        </asp:ContentPlaceHolder>
+
+    </div>    
+    <div style="border-top: 1px solid #808080; background-color: #ECECEC; height: 25px; position: inherit; right: 0px; bottom: 0px; left: 0px; font-family: tahoma; font-size: small; color: #666666; padding-top: 7px; padding-left: 30px; padding-right: 10px; border-left-color: #808080; border-right-color: #808080; border-bottom-color: #808080;" align="left">
+    <span id="uxp_ftr_link_trademark">© 2012 Com Sci</span> 
+</div>
+   
+    </form>
+    </center>
+</body>
+</html>

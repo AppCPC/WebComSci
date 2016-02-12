@@ -1,0 +1,79 @@
+===== E-Mail ทีใช้ส่ง==========
+Rmutto.Cpc.CS@gmail.com
+RmuttoCSwebsite
+===========================
+	
+
+
+============หน้าบ้าน==================
+
+
+หน้าแรก     		= Home
+ข่าวประกาศ/ประกวด	= News
+
+แนะนำสาขา		= Recommended_stores
+บุคลากร		= Personnel
+โครงสร้างหลักสูตร	= Curriculum
+เกณฑ์การคัดเลือกเรียนต่อ	= Study
+อาชีพในสายงาน		= Career_in_works
+
+แนะนำประกันคุณภาพ	= Quality_assurance
+เอกสารประกันคุณภาพ	= Quality_assurance_documents
+
+ข่าวกิจกรรมจากนักศึกษา	= Student_News
+ภาพกิจกรรมนักศึกษา	= Picture_students
+ตัวอย่างศิษย์เก่า		= Alumni
+
+
+
+
+=============หลังบ้าน=============================
+
+กระทู้ของฉัน	= My_posts
+กระทู้ทั้งหมด	= Post_all
+แผนการศึกษา	= Education
+รูปถ่าย		= Photos
+กลุ่ม			= Group
+ห้องเรียน		= Classroom
+องค์ความรู้		= Knowledge
+ตั้งค่า			= Set
+
+
+
+==============================================
+
+หน้าดึงมาแสดง consoul 
+ตรวจสอบ TreeEducation 2
+ไปเพิ่มข้อมูลเกรดหลังบ้านด้วย
+ตรวจเช็คชือ
+เพิ่มข้อมูลย้อนหลังมีปัญหา
+
+แต่งคอมเม้นโพส
+
+
+
+
+==================================================
+02วิทยาเขต, 52ปีที่เข้า, 3เทอมที่เข้า , 04 คณะ, 61สาขา, 103-8
+
+
+
+
+
+====================แสดง datatable =============
+
+        //if (dtsubject.Rows.Count > 0)
+        //{
+        //    int i = 0;
+        //    foreach (DataRow row in dtsubject.Rows)
+        //    {
+        //        foreach (DataColumn column in dtsubject.Columns)
+        //        {
+        //            Response.Write(row[column] + "  ");
+
+        //        }
+        //        Response.Write("<br/>");
+        //        i++;
+        //    }
+        //    Response.Write("count B " + i.ToString());
+        //}
