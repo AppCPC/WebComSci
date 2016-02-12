@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{46392C9D-C2FC-4B4F-8C49-091C49A7DB74}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebcomsciProject", "Webcomsci\WebcomsciProject.csproj", "{D27B1E92-66E1-40B9-A3CB-08744795F9B8}"
@@ -19,6 +19,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "CommonClass\common.csproj", "{FD9A3044-861D-4749-8D25-8534D61488AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{E37E3517-E590-47C6-BFD0-FBC100939D56}"
+	ProjectSection(SolutionItems) = preProject
+		Document\10-บทที่ 3.pdf = Document\10-บทที่ 3.pdf
+		Document\11-บทที่4.pdf = Document\11-บทที่4.pdf
+		Document\ER_diagram.pdf = Document\ER_diagram.pdf
+	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Project", "Project\", "{96FFB5A8-7CFC-4E6A-B378-08120B9A0B93}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -79,5 +84,5 @@ Global
 		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
 		{C9C1877D-9406-4991-BEBB-C734FC29869F} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
 		{FD9A3044-861D-4749-8D25-8534D61488AB} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
-	EndGlobalSection 
+	EndGlobalSection
 EndGlobal
