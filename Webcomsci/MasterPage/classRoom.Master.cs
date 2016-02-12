@@ -38,10 +38,7 @@ namespace Webcomsci.MasterPage
                     imgUser.ImageUrl = "/image/User.png";
                     imgprofile.ImageUrl = "/image/User.png";
 
-                }
-
-
-
+                } 
                 if (string.IsNullOrEmpty(usertype))
                 {
                     Response.Redirect("../../../WebPage/Authen/Login.aspx");
@@ -68,8 +65,7 @@ namespace Webcomsci.MasterPage
             sb.Append("alert('");
             sb.Append(msg.Replace("\n", "\\n").Replace("\r", "").Replace("'", "\\'"));
             sb.Append("');");
-            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "showalert", sb.ToString(), true);
-
+            ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "showalert", sb.ToString(), true); 
         }
 
         //protected void btnCreateUser_Click(object sender, EventArgs e)

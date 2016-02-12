@@ -5,11 +5,7 @@
 <head id="Head1" runat="server">
     <title></title>
     <link href="~/css/skins/Back.css" rel="stylesheet" type="text/css" />
-    <link href="../chosen/chosen.css" rel="stylesheet" type="text/css" />
-   
-
-
-   
+    <link href="../chosen/chosen.css" rel="stylesheet" type="text/css" />  
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
