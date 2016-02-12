@@ -56,7 +56,7 @@ namespace Webcomsci.WebPage.Authen
                         Session["userType"] = stdRole.Std_Type;
                         Session["username"] = stdRole.Std_FName;
                         Session["name"] = stdRole.Std_FName + "  " + stdRole.Std_LName;
-                        Session["yearEducate"] = stdRole.Std_YearEducate;
+                        Session["yearEducate"] = 2552;// stdRole.Std_YearEducate;
                         Session["picturepath"] = stdRole.std_picturepath;
 
                         if (stdRole.Std_Username.Equals(stdRole.Std_Password))

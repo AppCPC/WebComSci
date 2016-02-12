@@ -53,7 +53,7 @@
   <ItemGroup>
     <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\sittiporn\Desktop\AjaxControlToolkit.Binary.NET35\AjaxControlToolkit.dll</HintPath>
+      <HintPath>..\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
