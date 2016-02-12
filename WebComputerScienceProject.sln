@@ -79,9 +79,5 @@ Global
 		{0D3A6D27-86B4-4706-8ADA-D8D8946BA568} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
 		{C9C1877D-9406-4991-BEBB-C734FC29869F} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
 		{FD9A3044-861D-4749-8D25-8534D61488AB} = {46392C9D-C2FC-4B4F-8C49-091C49A7DB74}
-	EndGlobalSection
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
+	EndGlobalSection 
 EndGlobal
