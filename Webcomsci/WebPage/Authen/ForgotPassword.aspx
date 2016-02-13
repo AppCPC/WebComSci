@@ -5,7 +5,7 @@
  <p id="head">ลืมรหัสผ่าน !</p>
 <p align="left" style="height: 40px"></p>
     <div align="left" style="padding-right: 20px; padding-left: 20px">
-        <p style="height: 22px">รหัสผู้เข้าใช้ระบบ:</p>
+        <p style="height: 22px">รหัสผู้เข้าใช้ระบบ:</p> 
             <asp:TextBox ID="txtusername" runat="server" BorderColor="#999999" 
                 BorderStyle="Solid" BorderWidth="1px" CssClass="textbox"></asp:TextBox>
 
